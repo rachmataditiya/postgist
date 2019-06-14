@@ -11,13 +11,14 @@ RUN apt-get update \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts=$POSTGIS_VERSION \
            postgis=$POSTGIS_VERSION \
            alien \
-		   apt-utils \
-		   build-essential \
-		   libaio1 \
-		   libaio-dev \
-		   locales \
-		   locales-all \
-		   wget \
+       apt-utils \
+       build-essential \
+       libaio1 \
+       libaio-dev \
+       locales \
+       locales-all \
+       wget \
+       postgresql-server-dev-11\
       && rm -rf /var/lib/apt/lists/*
 ADD sources /usr/local
 
