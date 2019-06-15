@@ -18,7 +18,8 @@ RUN apt-get update \
        locales \
        locales-all \
        wget \
-       postgresql-server-dev-11\
+       postgresql-server-dev-11 \
+       libpq-dev \
       && rm -rf /var/lib/apt/lists/*
 ADD sources /usr/local
 
